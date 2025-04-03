@@ -1,0 +1,20 @@
+<body class="home">
+    <table>
+
+    <h1 class="title"> Lista de notas </h1>
+
+    </div >
+
+    <button class="new_task"><%= link_to "Nova nota", new_task_path %></button>
+
+    </div class="tasks">
+        <% @tasks.each do |tasks| %>
+            <tr>
+            <td><label class="elements name" ><%= link_to tasks.name, task_path(tasks) %></label> </td>
+            <td><label class="date" ><%= tasks.date %></label></td>
+            </tr>
+        <% end %>
+    </div>
+            
+    </table>
+</body>

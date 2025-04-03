@@ -1,0 +1,89 @@
+.home {
+    font-size: 25px;
+    background: rgb(21, 21, 21);
+    color: white;
+    margin: 0 40rem;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+}
+
+
+.title {
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 3rem;    
+}
+
+.new_task {
+    background-color: white;
+    margin: 3rem 0 5rem 0;
+}
+
+.tasks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    margin: 1.5rem;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.date {
+    margin: 0 0 0 35rem;
+}
+
+.date_show {
+    text-align: center;
+    font-size: 30px;
+}
+
+.description {
+    margin: 10rem 0 6rem 0;
+    max-width: 100%;
+    word-break: initial;
+}
+
+.button {
+    display: inline;
+    justify-content: center;
+    border: solid  2px blue;
+    border-radius: 20px;
+    padding: 1rem 6rem;
+    margin: 1rem 2rem;
+}
+
+.delet {
+    margin: 4rem 0 2rem 2.5rem;
+
+}
+
+
+.edit {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+.edit_elements {
+    padding: 2rem;
+    font-size: 40px;
+}
+
+textarea {
+    border: transparent;
+    max-width: 200%;
+    padding: 0 10rem 15rem  1rem ;
+    font-size: 30rem;
+    text-decoration: none;
+}
+
+.button_form_save {
+    display: inline;
+    border-radius: 20px;
+    margin: 0 2rem;
+}

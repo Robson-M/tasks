@@ -1,0 +1,23 @@
+<body class="home">
+<%= form_with(model: @task, local: true) do |form| %>
+    <table class="edit">
+    <tr>
+        <td class="edit_elements"><%= form.label :Tarefa %></td>
+        <td class="edit_camp"><%= form.text_field :name %></td>
+    </tr>
+    <tr>
+            <td class="edit_elements"><%= form.label :Data %></td>
+            <td class="edit_camp"><%= form.text_field :date %></td>
+    </tr>
+    <tr>
+        <td class="edit_elements"><%= form.label :description %></td>
+        <td class="edit_camp"><%= form.text_area :description %></td>
+    </tr>
+    </table>
+    <div>
+    <div class="button_form_save"><%= form.submit "Salvar" %></div>
+    
+    <div class="button"><%= link_to "Voltar", tasks_path(@task) %></div>
+    </div>
+<% end %>
+</body>

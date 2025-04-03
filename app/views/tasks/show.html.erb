@@ -1,0 +1,27 @@
+<body class="home">
+<div>
+    <h1 class="title"><%= @task.name %></h1>
+    <h5 class="date_show"><%= @task.date %></h5>
+</div>
+
+<div class="description">
+    <%= @task.description %>
+</div>
+
+<div class="buttons">
+
+<div class="button">
+    <%= link_to "Editar", edit_task_path %>
+</div>
+
+<div class="button">
+<%= link_to "Voltar", tasks_path %>
+</div>
+
+</div>
+
+<div class="delet">
+<%= button_to "Deletar", @task, method: :delete %>
+</div>
+
+</body>
